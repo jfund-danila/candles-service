@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+spring:
+  application:
+    name: candles-service
+  profiles:
+    active: ${PROFILE:local}
+
+server:
+  port: 8082
+
+app:
+  kafka:
+    currency-values-topic:${CURRENCY_VALUES_TOPIC:jfund-currency-keys}

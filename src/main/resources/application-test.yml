@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      host: ${DB_HOST:localhost}
+      port: ${DB_PORT:27017}
+      database: ${DB_NAME_TEST:jfundCandlesTest}
+      password: ${DB_PASSWORD_TEST:float123}
+      username: ${DB_USER_TEST:jfund}
+      authentication-database: admin
+
+app:
+  currencyApi:
+    accessKey: ${CURRENCY_ACCESS_KEY:ec142f3d17eb97486b71d155d609471a}
+
+  kafka:
+    server: ${KAFKA_SERVER:localhost:9092}
+    currency-values-topic: ${CURRENCY_VALUES_TOPIC:jfund-currency-values}
