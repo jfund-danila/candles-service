@@ -30,11 +30,6 @@ public class ChangeCurrencyValuesEvent {
         setHanded(handed);
     }
 
-    public ChangeCurrencyValuesEvent(List<CurrencyValue> changedValues, LocalDateTime changedDateTime) {
-        setChangedDateTime(changedDateTime);
-        setChangedValues(changedValues);
-    }
-
     public ChangeCurrencyValuesEvent(String id, List<CurrencyValue> changedValues, LocalDateTime changedDateTime) {
         this(id, changedDateTime, changedValues, false);
     }

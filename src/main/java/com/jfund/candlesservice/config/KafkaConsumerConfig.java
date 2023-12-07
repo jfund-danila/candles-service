@@ -1,6 +1,5 @@
 package com.jfund.candlesservice.config;
 
-import com.jfund.candlesservice.entity.ChangeCurrencyValuesEvent;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
