@@ -10,8 +10,8 @@ spring:
 
 app:
   currencyApi:
-    accessKey: ${CURRENCY_ACCESS_KEY:ec142f3d17eb97486b71d155d609471a}
+    accessKey: ${CURRENCY_ACCESS_KEY:c2d601fea1abdae7dab05755852cd1d1}
 
   kafka:
     server: ${KAFKA_SERVER:localhost:9092}
-    currency-values-topic: ${CURRENCY_VALUES_TOPIC:jfund-currency-values}
+    currency-values-topic: ${CURRENCY_VALUES_TOPIC:jfund-currKafkaConsumerConfigency-values}
