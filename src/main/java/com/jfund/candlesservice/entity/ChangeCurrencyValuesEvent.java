@@ -14,7 +14,7 @@ import java.util.List;
 @Accessors(chain = true)
 @Getter
 @Setter
-@Document
+@Document(collection = "changeCurrencyValuesEvents")
 public class ChangeCurrencyValuesEvent {
     @Id
     private String id;
